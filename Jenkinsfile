@@ -1,8 +1,9 @@
 pipeline {
-	  agent { docker { image 'maven:3.6.3'} }
+	  agent { docker { image 'aksnfug/maven-jdk11-gradle'} }
 	  stages {
 	     stage('Build') {
 		      steps {
+			    echo 'mvn --version'
 				echo 'Build'
 			}
 		 }
