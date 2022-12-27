@@ -1,5 +1,6 @@
+//Declarative
 pipeline {
-	  agents any
+	  agent any
 	  stages {
 	     stage('Build') {
 		      steps {
