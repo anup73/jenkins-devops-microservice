@@ -9,10 +9,8 @@ pipeline {
 	  stages {
 	     stage('Build') {
 		      steps {
-			  
-			    sh 'maven --version'
-				sh 'docker --version'
 				echo 'Build'
+				echo "MAVEN HOME - $mavenHome"
 				echo "PATH - $PATH"
 				echo "BUILD NUMBER - $env.BUILD_NUMBER"
 				echo "JOB_NAME - $env.JOB_NAME"
