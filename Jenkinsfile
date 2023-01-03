@@ -5,7 +5,7 @@ pipeline {
 	     stage('Build') {
 		      steps {
 				echo 'Build'
-				sh 'maven --version
+				sh 'maven --version'
 				echo "PATH - $PATH"
 				echo "BUILD NUMBER - $env.BUILD_NUMBER"
 				echo "JOB_NAME - $env.JOB_NAME"
